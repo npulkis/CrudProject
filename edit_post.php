@@ -63,7 +63,8 @@ WHERE postID = :post_id';
     $statement->execute();
     $statement->closeCursor();
 
-// Display the Product List page
-    include('index.php');
+// Display the post List page
+
+    echo("<script>window.location.replace('index.php');</script>");
 }
 ?>

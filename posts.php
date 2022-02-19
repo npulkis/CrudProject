@@ -27,10 +27,15 @@ global $db;
                     <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
                          <a href="post.php?id='.$post['postID'].'" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
-                        <form action="edit_post_form.php" method="post" id="ediy_record_form">
+                        <form action="edit_post_form.php" method="post" id="edit_post_form">
                              <input type="hidden" name="post_id" value="'.$post['postID'].'">
                             <input type="hidden" name="tag_id" value="'.$post['tagID'].'">
                             <button type="submit" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Edit</button>
+                        </form>
+                         <form action="delete_post.php" method="post" id="delete_post">
+                             <input type="hidden" name="post_id" value="'.$post['postID'].'">
+                            <input type="hidden" name="tag_id" value="'.$post['tagID'].'">
+                            <button type="submit" class="btn btn-sm btn-outline-danger" role="button" aria-pressed="true">Delete</button>
                         </form>
                     </div>
                   </div>
