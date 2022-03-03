@@ -38,7 +38,9 @@ global $db;
                             <button type="submit" class="btn btn-sm btn-outline-danger" role="button" aria-pressed="true">Delete</button>
                         </form>
                     </div>
+                    
                   </div>
+                
                 </div>
               </div>
             </div>

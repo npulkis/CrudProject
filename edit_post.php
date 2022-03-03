@@ -7,9 +7,7 @@ $caption = filter_input(INPUT_POST, 'caption');
 $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_FLOAT);
 
 // Validate inputs
-if ($post_id == NULL || $post_id == FALSE || $post_id == NULL ||
-    $post_id == FALSE || empty($caption) ||
-    $likes == NULL || $likes == FALSE) {
+if ($post_id == NULL) {
     $error = "Invalid record data. Check all fields and try again.";
     include('error.php');
 } else {

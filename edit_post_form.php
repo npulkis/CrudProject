@@ -10,6 +10,12 @@ $statement->bindValue(':post_id', $post_id);
 $statement->execute();
 $posts = $statement->fetch(PDO::FETCH_ASSOC);
 $statement->closeCursor();
+
+$query = 'SELECT * FROM tags ORDER BY tagID';
+$statement = $db->prepare($query);
+$statement->execute();
+$tags = $statement->fetchAll();
+$statement->closeCursor();
 ?>
     <!-- the head section -->
 
@@ -28,6 +34,8 @@ include('includes/header.php');
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Edit Tag Id</label>
             <input type="text" class="form-control" id="tagID" name="tag_id" placeholder="Enter Tag ID" value="<?php echo $posts['tagID'];?>">
+
+
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Edit Caption</label>
