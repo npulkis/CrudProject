@@ -30,6 +30,17 @@
                     <a class="nav-link active" aria-current="page" href="./add_post_form.php">Add Post</a>
                 </li>
 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=# id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tags
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="tag_list.php">All Tags</a></li>
+                        <li><a class="dropdown-item" href="add_tag_form.php">Add Tag</a></li>
+                    </ul>
+                </li>
+
+
             </ul>
         </div>
     </div>
