@@ -25,12 +25,18 @@ include('includes/header.php');
                value="<?php echo $posts['postID']; ?>">
         <input type="hidden" name="likes"
                value="<?php echo $posts['likes']; ?>">
+
+
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Edit Tag Id</label>
             <input type="text" class="form-control" id="tagID" name="tag_id" placeholder="Enter Tag ID" value="<?php echo $posts['tagID'];?>">
-
-
         </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="title" placeholder="Edit Title"value="<?php echo $posts['title'];?>">
+        </div>
+
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Edit Caption</label>
             <textarea class="form-control" id="caption" name="caption" rows="5" ><?php echo $posts['caption'];?></textarea>

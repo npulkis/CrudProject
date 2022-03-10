@@ -102,7 +102,7 @@ if ($posts > 0) {
                 <img class="card-img-top" src="./image_uploads/' . $post['image'] . ' " alt="Card image cap">
                 </a>
                 <div class="card-body">
-                  <p class="card-text">' . htmlspecialchars_decode(substr($post['caption'], 0, 255)) . '</p>
+                  <p class="card-text">' . htmlspecialchars_decode(substr($post['title'], 0, 150)) . '</p>
                     <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
 

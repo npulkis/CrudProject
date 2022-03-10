@@ -6,11 +6,13 @@ $statement->execute();
 $tags = $statement->fetchAll();
 $statement->closeCursor();
 ?>
-    <!-- the head section -->
-    <div class="container">
+
 <?php
 include('includes/header.php');
 ?>
+    <!-- the head section -->
+    <div class="container">
+
 
         <div class="container">
 
@@ -20,7 +22,7 @@ include('includes/header.php');
                   id="add_record_form">
                 <input type="hidden" name="likes" value="0">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tag</label>
+                    <label for="tag_id" class="form-label">Tag</label>
 <!--                    <input type="text" class="form-control" id="tagID" name="tag_id" placeholder="Enter Tag ID">-->
                     <select name="tag_id" class="form-select" aria-label="Select Tag">
                         <?php foreach ($tags as $tag) : ?>
@@ -31,7 +33,13 @@ include('includes/header.php');
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Edit Caption</label>
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" class="form-control" id="title" aria-describedby="inputGroupFileAddon04">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="caption" class="form-label">Caption</label>
                     <textarea class="form-control" id="caption" name="caption" rows="5" ></textarea>
                 </div>
 

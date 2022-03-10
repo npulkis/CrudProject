@@ -3,6 +3,7 @@
 // Get the record data
 $post_id = filter_input(INPUT_POST, 'post_id', FILTER_VALIDATE_INT);
 $tag_id = filter_input(INPUT_POST, 'tag_id', FILTER_VALIDATE_INT);
+$title = filter_input(INPUT_POST, 'title');
 $caption = filter_input(INPUT_POST, 'caption');
 $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_FLOAT);
 
@@ -48,12 +49,14 @@ if ($post_id == NULL) {
 
     $query = 'UPDATE posts
 SET tagID = :tag_id,
+title = :title,   
 caption = :caption,
 likes = :likes,
 image = :image
 WHERE postID = :post_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':tag_id', $tag_id);
+    $statement->bindValue(':title', $title);
     $statement->bindValue(':caption', $caption);
     $statement->bindValue(':likes', $likes);
     $statement->bindValue(':image', $image);

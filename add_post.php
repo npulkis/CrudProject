@@ -2,6 +2,7 @@
 
 // Get the product data
 $tag_id = filter_input(INPUT_POST, 'tag_id', FILTER_VALIDATE_INT);
+$title = filter_input(INPUT_POST, 'title');
 $caption = filter_input(INPUT_POST, 'caption');
 $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_INT);
 
@@ -63,11 +64,12 @@ $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_INT);
 
     // Add the product to the database
     $query = "INSERT INTO posts
-                 (tagID, caption, likes, image)
+                 (tagID, title,caption, likes, image)
               VALUES
-                 (:tag_id, :caption, :likes, :image)";
+                 (:tag_id,:title, :caption, :likes, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':tag_id', $tag_id);
+    $statement->bindValue(':title', $title);
     $statement->bindValue(':caption', $caption);
     $statement->bindValue(':likes', $likes);
     $statement->bindValue(':image', $image);
