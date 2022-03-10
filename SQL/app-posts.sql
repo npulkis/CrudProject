@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2022 at 03:11 PM
+-- Generation Time: Mar 10, 2022 at 04:53 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `app-posts`
 --
+CREATE DATABASE IF NOT EXISTS `app-posts` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `app-posts`;
 
 -- --------------------------------------------------------
 
@@ -30,6 +32,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `posts` (
   `postID` int(10) NOT NULL,
   `tagID` int(10) NOT NULL,
+  `title` varchar(150) NOT NULL,
   `caption` varchar(512) NOT NULL,
   `likes` int(11) NOT NULL,
   `image` varchar(255) NOT NULL,
@@ -52,11 +55,11 @@ CREATE TABLE `tags` (
 --
 
 INSERT INTO `tags` (`tagID`, `tagName`) VALUES
+(1, 'Travel'),
 (2, 'Food'),
 (3, 'Fashion'),
 (4, 'Art'),
-(5, 'Photography'),
-(1, 'Travel');
+(5, 'Photography');
 
 --
 -- Indexes for dumped tables
@@ -69,6 +72,12 @@ ALTER TABLE `posts`
   ADD PRIMARY KEY (`postID`);
 
 --
+-- Indexes for table `tags`
+--
+ALTER TABLE `tags`
+  ADD PRIMARY KEY (`tagID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -76,7 +85,13 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `postID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `postID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+
+--
+-- AUTO_INCREMENT for table `tags`
+--
+ALTER TABLE `tags`
+  MODIFY `tagID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
