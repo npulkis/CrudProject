@@ -75,5 +75,7 @@ $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_INT);
     $statement->closeCursor();
 
     // Display the Product List page
-    include('index.php');
+
+    echo("<script>window.location.replace('index.php');</script>");
+
 //}

@@ -34,6 +34,18 @@ include('includes/header.php');
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Edit Tag Id</label>
             <input type="text" class="form-control" id="tagID" name="tag_id" placeholder="Enter Tag ID" value="<?php echo $posts['tagID'];?>">
+<!--            <select name="tag_id" class="form-select" aria-label="Select Tag">-->
+<!--                --><?php //foreach ($tags  as $tag) :?>
+<!---->
+<!--                --><?php //if ($posts[tagID] != $tags['tagID']) {?>
+<!---->
+<!--                    <option selected="--><?php //echo $posts['tagID'];?><!--" value="--><?php //echo $tag['tagID']; ?><!--">-->
+<!--                        --><?php //echo $tag['tagName']; ?>
+<!--                    </option>-->
+<!--                --><?php //} ?>
+<!---->
+<!--                --><?php //endforeach; ?>
+<!--            </select>-->
 
 
         </div>
