@@ -12,7 +12,7 @@ A Social Media App that allows users to
 
 
 ##Demo
-A demo is available here to try before downloading.
+A demo is available [here](https://mysql05.comp.dkit.ie/D00239038/SocialMediaApp/) to try before downloading.
 
 ##Instructions
 - Import the provided SQL into MYSQL
