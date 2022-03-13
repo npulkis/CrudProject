@@ -1,1 +1,1 @@
-# ![app-token] (readme%20images/project%20logo.png)
+# ![app-token] (readme-images/project-logo.png)
