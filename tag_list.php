@@ -12,6 +12,9 @@ include('includes/header.php')
 ?>
 
 <div class="container">
+    <h3>List of all Tags</h3>
+<div class="form">
+
 
     <table class="table table-light">
         <thead>
@@ -24,6 +27,8 @@ include('includes/header.php')
         foreach ($tags as $tag){
 
             echo'
+               
+
                <tr>
                 <th scope="row">'.$tag['tagID'].'</th>
                 <td>'.$tag['tagName'].'</td>
@@ -35,7 +40,7 @@ include('includes/header.php')
         ?>
         </tbody>
     </table>
-
+</div>
 
 
 

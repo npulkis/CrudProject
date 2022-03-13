@@ -26,7 +26,7 @@ $likes = filter_input(INPUT_POST, 'likes', FILTER_VALIDATE_INT);
     $imgSize = $_FILES['image']['size'];
 
     if (empty($imgFile)) {
-        $image = "";
+        $image = "placeholder.jpg";
     } else {
         $upload_dir = 'image_uploads/'; // upload directory
 

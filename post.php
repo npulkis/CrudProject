@@ -30,7 +30,7 @@ include('./includes/header.php');
 ?>
 
 <head>
-    <link rel="stylesheet" href="post.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/post.css" type="text/css"/>
 </head>
 
 
