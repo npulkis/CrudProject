@@ -14,7 +14,10 @@ include('includes/header.php');
 
             <div class="mb-3">
                 <label for="tag" class="form-label">Enter Tag Name</label>
-                <input type="text" name="tag" class="form-control" id="title" aria-describedby="inputGroupFileAddon04" required>
+                <input type="text" name="tag" class="form-control" id="tag" aria-describedby="inputGroupFileAddon04" required onblur="tag_validation()">
+                <div id="tagCheck" class="">
+                </div>
+            </div>
             </div>
 
             <button type="submit" class="btn btn-sm btn-primary" role="button">Save</button>

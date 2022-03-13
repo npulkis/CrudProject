@@ -51,12 +51,17 @@ include('includes/header.php');
 
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" name="title" class="form-control" id="title" placeholder="Edit Title"value="<?php echo $posts['title'];?>" required>
+            <input type="text" name="title" class="form-control" id="title" placeholder="Edit Title"value="<?php echo $posts['title'];?>" onblur="title_validation()" required>
+            <div id="titleCheck" class="">
+            </div>
         </div>
 
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Edit Caption</label>
-            <textarea class="form-control" id="caption" name="caption" rows="5" required><?php echo $posts['caption'];?></textarea>
+            <textarea class="form-control" id="caption" name="caption" rows="5" required onblur="caption_validation()"><?php echo $posts['caption'];?></textarea>
+            <div id="captionCheck" class="">
+            </div>
+        </div>
         </div>
 
         <div class="mb-3">

@@ -12,6 +12,8 @@ include('includes/header.php');
 ?>
 
 
+
+
     <div class="container">
 
 
@@ -21,7 +23,7 @@ include('includes/header.php');
         <div class="form">
 
             <form action="add_post.php" method="post" enctype="multipart/form-data"
-                  id="add_record_form">
+                  id="add_record_form" >
                 <input type="hidden" name="likes" value="0">
                 <div class="mb-3">
                     <label for="tag_id" class="form-label">Tag</label>
@@ -35,20 +37,27 @@ include('includes/header.php');
                 </div>
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
-                    <input type="text" name="title" class="form-control" id="title" aria-describedby="inputGroupFileAddon04" required>
+                    <input type="text" name="title" class="form-control" id="title" aria-describedby="inputGroupFileAddon04" required onblur="title_validation()" >
+                    <div id="titleCheck" class="">
+                    </div>
                 </div>
 
 
                 <div class="mb-3">
                     <label for="caption" class="form-label">Caption</label>
-                    <textarea class="form-control" id="caption" name="caption" rows="5" required></textarea>
+                    <textarea class="form-control" id="caption" name="caption" rows="5" required onblur="caption_validation()"></textarea>
+                    <div id="captionCheck" class="">
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <input type="file" name="image" class="form-control" id="image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+
                 </div>
                 <button type="submit" class="btn btn-sm btn-primary" role="button">Save</button>
             </form>
         </div>
 
         </div>
+
+
