@@ -1,7 +1,9 @@
+
+ 
  ![](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/project-logo.png)
 
 
-##Preview 
+## Preview 
 ![](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/preview.gif)
 
  A Social Media App that allows users to:
@@ -10,7 +12,7 @@
 * Sort by tag
 * Edit and Delete posts
 
-##Demo
+## Demo
 A demo is available [here](https://mysql05.comp.dkit.ie/D00239038/SocialMediaApp/) to try before downloading.
 
 ##Instructions
