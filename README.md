@@ -17,7 +17,7 @@
 ## Demo
 A demo is available [here](https://mysql05.comp.dkit.ie/D00239038/SocialMediaApp/) to try before downloading.
 
-##Instructions
+## Instructions
 * Import the provided SQL into MYSQL
 * Host the PHP files on your server or use XAMPP
 * Edit database.php to include your database credentials
