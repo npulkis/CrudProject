@@ -1,8 +1,8 @@
- ![logo](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/project-logo.png)
+ ![](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/project-logo.png)
 
 
 ##Preview 
-![preview](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/preview.gif)
+![](https://raw.githubusercontent.com/nthnplks21/CrudProject/master/readme-images/preview.gif)
 
  A Social Media App that allows users to:
 * Create posts with an image,tag and caption
